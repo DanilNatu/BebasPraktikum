@@ -97,5 +97,49 @@
 //     console.log('dasar javascript')
 // }
 
+console.log(document.title)
+document.title = 'Pemrograman Web'
+//console.log(document.title)
 
+console.log(document.body)
+
+const body = document.body //let
+body.append('Hello World!') //body = 'Hello World!)
+
+const h1 = document.createElement('h1')
+h1.textContent = 'Ini adalah baris Heading 1'
+
+body.append(h1)
+
+const variabelPertama = document.createElement('p')
+variabelPertama.innerHTML = '<marquee> Ini merupakan baris paragraph</marquee>'
+body.append(variabelPertama)
+
+const variabelKedua =  document.createElement('b')
+variabelKedua.innerText = 'Ini merupakan Baris dengan tulisan bold'
+body.append(variabelKedua)
+
+const variabelKetiga =  document.createElement('p')
+variabelKetiga.innerHTML = '<marquee width="60%" direction="up" height="100px"> Ini merupakan baris paragraph</marquee>'
+body.append(variabelKetiga)
+// marquee untuk menggerakankan text
+// memberikan bold pada text
+
+const btn1 = document.getElementById('btn1')
+btn1.style.border = 'none'
+btn1.style.padding = '8px'
+btn1.style.fontSize = '24px'
+btn1.style.background = 'tomato'
+
+const btn2 = document.querySelector('.btn2')
+console.log(btn2)
+
+function gantiwarna(){
+    btn3.style.background = 'aqua'
+    btn3.style.fontSize = '20px'
+}
+
+function ubahText(){
+    btn4.textContent = 'Button Text Berubah'
+}
 
